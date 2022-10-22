@@ -1,3 +1,5 @@
+<?php $root = $_SERVER['DOCUMENT_ROOT']; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +9,6 @@
     <title>Главная</title>
 </head>
 <body>
-    
+    <?php include($root."/layouts/header.php") ?>
 </body>
 </html>

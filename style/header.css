@@ -1,0 +1,15 @@
+body {
+    background-color: azure;
+}
+
+.myContainer {
+    max-width: 1366px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.menu-mini:hover {
+    border-bottom: 2px solid white !important;
+}
