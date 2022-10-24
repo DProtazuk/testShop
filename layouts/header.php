@@ -1,4 +1,6 @@
 <?php $root = $_SERVER['DOCUMENT_ROOT']; ?>
+<?php include($root."/config/connect.php"); ?>
+
 
 <?php 
     include($root."/config/link-css.php");
@@ -10,7 +12,7 @@
 
     <div class="search col-5 d-flex">
         <input placeholder="Искать:" type="text" class="form-control">
-        <button class="btn btn-primary mx-1">Поиск</button>
+        <button class="btn bg-primary mx-1" style="--bs-bg-opacity: .8;">Поиск</button>
     </div>
 
     <div class="col-4 d-flex justify-content-between">
@@ -22,7 +24,7 @@
         </div>
 
         <div class="col-3 px-3 d-flex justify-content-end">
-            <button class="btn fw-bold bg-success px-4 text-white">Войти</button>
+            <button class="btn fw-bold bg-success px-4 text-white btnEntrance" style="--bs-bg-opacity: .5;">Войти</button>
         </div>
     </div>
 </header>
@@ -40,3 +42,12 @@
         Контакты
     </div>
 </div>
+
+
+<?php 
+    include($root."/php/Entrance.php");
+    $instance = new Entrance();
+    //echo $instance->authentication("admin", $db);
+    echo "<pre>";
+    var_dump($instance->authentication("admin", $db));
+?>

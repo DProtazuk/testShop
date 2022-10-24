@@ -1,0 +1,29 @@
+body {
+    background-color: #b8c7c7;
+}
+
+.myContainer {
+    max-width: 1366px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.menu-mini:hover {
+    border-bottom: 2px solid white !important;
+}
+
+.divBlockEntrance:hover {
+    color: red !important;
+    opacity: 0.7;
+}
+
+.active {
+    color: red !important;
+    opacity: 0.7;
+}
+
+.registration {
+    display: none;
+}
